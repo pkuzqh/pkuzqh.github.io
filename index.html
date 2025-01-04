@@ -18,141 +18,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="assets/css/styleec92.css?v=">
-    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .iconlink {
+            list-style: none;
+            padding: 0;
+        }
+        .iconlink li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .iconlink a {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .iconlink a:hover {
+            color: #3498db;
+        }
+        .animate__animated {
+            animation-duration: 1s;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <script src="https://kit.fontawesome.com/d93ebe50f2.js" crossorigin="anonymous"></script>
+</head>
 
-  </head>
-
-  
-  <body>
+<body>
     <div class="wrapper">
-      <header>
-        <h1><a href="index.html">Zhu Qihao | 朱琪豪</a></h1>
-        
-        <img src="assets/img/avatar.jpg" alt="Logo" style="width: 90%; height: 90%"/>
+        <header>
+            <h1 class="animate__animated animate__fadeInDown">Zhu Qihao | 朱琪豪 🚀</h1>
+            
+            <img src="assets/img/avatar.jpg" alt="Logo" style="width: 90%; height: 90%; border-radius: 50%; animation: fadeIn 2s;"/>
 
-        <p class="view"></p>
+            <p class="view"></p>
 
-        <br>
+            <br>
 
-        <ul class="iconlink">
+            <ul class="iconlink">
+                <li>
+                    <a href="mailto:zhuqh@pku.edu.cn">
+                        <i class="fas fa-fw fa-envelope fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/zhuqh">
+                        <i class="fab fa-fw fa-github fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/citations?hl=en&amp;user=TZUn02oAAAAJ">
+                        <i class="fas fa-fw fa-graduation-cap fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Google Scholar</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <section>
 
-          <li>
-            <a href="mailto:zhuqh@pku.edu.cn">
-              <i class="fas fa-fw fa-envelope fa-lg" aria-hidden="true"></i></i><span class="label" style="font-size: 110%"> Email</span>
-            </a>
-          </li>
+            <h2 id="about" class="animate__animated animate__fadeIn">About Me 🌟</h2>
+            <p>I am a Ph.D. student in the School of Computer Science at Peking University, advised by <a href="https://soar.group/chenren/">Prof. Yingfei Xiong</a>. My research interests include program generation, program understanding, pre-trained large models, and natural language processing. I obtained my B.S. degree in Computer Science from Peking University in 2019.</p>
 
-          <li>
-            <a href="https://www.github.com/zhuqh">
-              <i class="fab fa-fw fa-github fa-lg" aria-hidden="true"></i></i><span class="label" style="font-size: 110%"> Github</span>
-            </a>
-          </li>
+            <hr />
 
-          <li>
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=TZUn02oAAAAJ">
-              <i class="fas fa-fw fa-graduation-cap fa-lg" aria-hidden="true"></i></i><span class="label" style="font-size: 110%"> Google Scholar</span>
-            </a>
-          </li>
+            <h2 id="publications" class="animate__animated animate__fadeIn">Publications 📚</h2>
 
-        </ul>
+            <p> <strong>Tare: Type-Aware Neural Program Repair</strong> <br /> 
+                <strong>Qihao Zhu</strong>, et al. <br /> 
+                <em>45th International Conference on Software Engineering (ICSE) 2023</em>
+            </p>
 
-      </header>
-      <section>
+            <p><strong>Grape: Grammar-Preserving Rule Embedding</strong> <br />
+                <strong>Qihao Zhu</strong>, et al. <br />
+                <em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em>
+            </p>
 
-      <h2 id="about">About</h2>
-<p>I am a Ph.D. student in the School of Computer Science at Peking University, advised by <a href="https://soar.group/chenren/">Prof. Yingfei Xiong</a>. My research interests include program generation, program understanding, pre-trained large models, and natural language processing. I obtained my B.S. degree in Computer Science from Peking University in 2019.</p>
+            <p><strong>A Syntax-Guided Edit Decoder for Neural Program Repair</strong> <br />
+                <strong>Qihao Zhu</strong>, et al. <br />
+                <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em>
+            </p>
 
-<hr />
+            <p><strong>OCoR: An Overlapping-Aware Code Retriever</strong> <br />
+                <strong>Qihao Zhu</strong>, et al. <br />
+                <em>35th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2020</em>
+            </p>
 
-<h2 id="publications">Publications</h2>
+            <p><strong>A Grammar-based Structural CNN Decoder for Code Generation</strong> <br />
+                Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2019</em>
+            </p>
 
-<p> <strong>Tare: Type-Aware Neural Program Repair</strong> <br /> 
-  Qihao Zhu, et al. <br /> 
-<em>45th International Conference on Software Engineering (ICSE) 2023</em></p>
+            <p><strong>TreeGen: A Tree-Based Transformer Architecture for Code Generation</strong> <br />
+                Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2020</em>
+            </p>
 
-<p><strong>Grape: Grammar-Preserving Rule Embedding</strong> <br />
-  Qihao Zhu, et al. <br />
-<em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em> </p>
+            <p><strong>Boosting Coverage-based Fault Localization via Graph-based Representation Learning</strong> <br />
+                Yingfei Lou, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em>
+            </p>
 
-<p><strong>A Syntax-Guided Edit Decoder for Neural Program Repair</strong> <br />
-  Qihao Zhu, et al. <br />
-<em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em></p>
+            <p><strong>FIRA: Fine-grained Graph-based Code Change Representation for Automated Commit Message Generation</strong> <br />
+                Jingxuan Dong, Yingfei Lou, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>44th International Conference on Software Engineering (ICSE) 2022</em>
+            </p>
 
-<p><strong>OCoR: An Overlapping-Aware Code Retriever</strong> <br />
-  Qihao Zhu, et al. <br />
-<em>35th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2020</em></p>
+            <p><strong>Learning to Construct Better Mutation Faults</strong> <br />
+                Zhenyu Tian, Jingxuan Chen, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>37th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2022</em>
+            </p>
 
-<p><strong>A Grammar-based Structural CNN Decoder for Code Generation</strong> <br />
-  Zeyu Sun, Qihao Zhu, et al. <br />
-<em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2019</em></p>
+            <p><strong>NLocalSAT: Boosting Local Search with Solution Prediction</strong> <br />
+                Wenjie Zhang, Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>29th International Joint Conference on Artificial Intelligence (IJCAI) 2020</em>
+            </p>
 
-<p><strong>TreeGen: A Tree-Based Transformer Architecture for Code Generation</strong> <br />
-  Zeyu Sun, Qihao Zhu, et al. <br />
-<em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2020</em></p>
+            <p><strong>Lyra: A Benchmark for Turducken-Style Code Generation</strong> <br />
+                Qingyuan Liang, Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em>
+            </p>
 
-<p><strong>Boosting Coverage-based Fault Localization via Graph-based Representation Learning</strong> <br />
-  Yingfei Lou, Qihao Zhu, et al. <br />
-<em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em></p>
+            <p><strong>Preferential Labeling for Unattributed Node Classification in GNNs</strong> <br />
+                Zeyu Sun, Zeyu Sun, Li Mou, <strong>Qihao Zhu</strong>, et al. <br />
+                <em>36th AAAI Conference on Artificial Intelligence (AAAI) 2022</em>
+            </p>
 
-<p><strong>FIRA: Fine-grained Graph-based Code Change Representation for Automated Commit Message Generation</strong> <br />
-  Jingxuan Dong, Yingfei Lou, Qihao Zhu, et al. <br />
-<em>44th International Conference on Software Engineering (ICSE) 2022</em></p>
+            <hr />
 
-<p><strong>Learning to Construct Better Mutation Faults</strong> <br />
-  Zhenyu Tian, Jingxuan Chen, Qihao Zhu, et al. <br />
-<em>37th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2022</em></p>
+            <h2 id="awards" class="animate__animated animate__fadeIn">Awards 🏆</h2>
+            <p>Peking University President Scholarship 🎓 <br />
+                Peking University Outstanding Student Award 🌟 <br />
+                Peking University May 4th Scholarship 🏅 <br />
+                Peking University Guanghua Scholarship 🥇</p>
 
-<p><strong>NLocalSAT: Boosting Local Search with Solution Prediction</strong> <br />
-  Wenjie Zhang, Zeyu Sun, Qihao Zhu, et al. <br />
-<em>29th International Joint Conference on Artificial Intelligence (IJCAI) 2020</em></p>
+            <hr />
 
-<p><strong>Lyra: A Benchmark for Turducken-Style Code Generation</strong> <br />
-  Qingyuan Liang, Zeyu Sun, Qihao Zhu, et al. <br />
-<em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em></p>
+            <h2 id="services" class="animate__animated animate__fadeIn">Services 🛠️</h2>
 
-<p><strong>Preferential Labeling for Unattributed Node Classification in GNNs</strong> <br />
-  Zeyu Sun, Zeyu Sun, Li Mou, Qihao Zhu, et al. <br />
-<em>36th AAAI Conference on Artificial Intelligence (AAAI) 2022</em></p>
+            <p> <strong>Reviewer</strong> <br />
+                AAAI, ICSE, FSE, IJCAI, ASE
+            </p>
 
-<hr />
+            <p><strong>Teaching Assistant</strong><br />
+                Program Analysis, 2022 📊 <br />
+                Software Engineering, 2021 💻 <br />
+            </p>
 
-<h2 id="awards">Awards</h2>
-<p>Peking University President Scholarship <br />
-  Peking University Outstanding Student Award <br />
-  Peking University May 4th Scholarship <br />
-  Peking University Guanghua Scholarship</p>
-
-<hr />
-
-<h2 id="services">Services</h2>
-
-<p> <strong>Reviewer</strong> <br />
-AAAI, ICSE, FSE, IJCAI, ASE</p>
-
-<p><strong>Teaching Assistant</strong><br />
-  Program Analysis, 2022 <br />
-  Software Engineering, 2021 <br />
-</p>
-
-<hr />
-
-
-      </section>
-      <footer>
-        
-
-        
-        <p><small>Aug. 2023</small></p>
-        
-      </footer>
+            <hr />
+        </section>
+        <footer>
+            <p><small>Aug. 2023</small></p>
+        </footer>
     </div>
     <script src="assets/js/scale.fix.js"></script>
-    <!--<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CG1Ki6-8ZvNDOkRKNr_563T5Za79VQlgTvgvoc8qUh4"></script>-->
-  </body>
-
+</body>
 </html>
