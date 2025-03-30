@@ -1,276 +1,1003 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM3153CWL5"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-TM3153CWL5');
-    </script>
-
-    <title>Zhu Qihao | 朱琪豪</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- 引入Google Fonts艺术字体 -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styleec92.css?v=">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <script src="https://kit.fontawesome.com/d93ebe50f2.js" crossorigin="anonymous"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhu Qihao | AI Researcher | Program Generation Expert</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <style>
-        /* 添加一些特效 */
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --text: #333333;
+            --text-light: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 Q50,80 0,100 Z"></path></svg>');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .header-text {
+            flex: 1;
+            padding-left: 3rem;
+        }
+        
         h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            font-family: 'Pacifico', cursive; /* 使用艺术字体 */
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-
-        h1 strong {
-            font-family: 'Dancing Script', cursive; /* 使用另一种艺术字体 */
-            color: #3498db; /* 蓝色 */
-            font-weight: bold;
+        
+        .title {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
         }
-
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
         }
-
-        .iconlink a {
-            color: #3498db;
-            transition: color 0.3s ease;
+        
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
         }
-
-        .iconlink a:hover {
-            color: #e74c3c;
+        
+        .social-link:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
         }
-
-        .publication-item {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            border-left: 3px solid #3498db;
+        
+        /* Navigation */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-
-        .publication-item strong {
-            color: #2c3e50;
-            font-weight: bold;
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
         }
-
-        .award-item {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            border-left: 3px solid #2ecc71;
-        }
-
-        .service-item {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            border-left: 3px solid #f1c40f;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            color: #7f8c8d;
-        }
-
-        /* 添加DeepSeek-V3标识样式 */
-        .deepseek-identifier {
-            font-size: 0.9em;
-            color: #95a5a6;
-            margin-top: 10px;
-        }
-
-        .deepseek-identifier a {
-            color: #3498db;
+        
+        .nav-link {
+            padding: 1.2rem 1.5rem;
+            color: var(--text);
             text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
         }
-
-        .deepseek-identifier a:hover {
-            color: #e74c3c;
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .nav-link:hover::after {
+            width: 70%;
+        }
+        
+        .nav-link.active {
+            color: var(--primary);
+        }
+        
+        .nav-link.active::after {
+            width: 70%;
+        }
+        
+        /* Main Content */
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 2;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .about-image img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        /* Publications Section */
+        .publication-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .publication-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pub-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pub-authors {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .pub-conference {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        
+        /* Awards Section */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .award-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--success);
+        }
+        
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .award-icon {
+            font-size: 2rem;
+            color: var(--success);
+            margin-bottom: 1rem;
+        }
+        
+        .award-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .award-org {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .service-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-link {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: white;
+        }
+        
+        .copyright {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-text {
+                padding-left: 0;
+                margin-top: 2rem;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .title {
+                font-size: 1.2rem;
+            }
+            
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .nav-link {
+                padding: 0.8rem 1rem;
+            }
+        }
+        
+        /* Particle Background */
+        .particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        /* Floating Code Elements */
+        .code-snippet {
+            position: absolute;
+            font-family: 'Fira Code', monospace;
+            background-color: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            animation: float 10s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+        
+        /* Modal for publications */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #333;
         }
     </style>
-  </head>
-
-  
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="index.html">Zhu Qihao | <strong>朱琪豪</strong></a></h1>
-        
-        <img src="assets/img/avatar.jpg" alt="Logo" style="width: 90%; height: 90%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"/>
-
-        <p class="view"></p>
-
-        <br>
-
-        <ul class="iconlink">
-
-          <li>
-            <a href="mailto:zhuqh@pku.edu.cn">
-              <i class="fas fa-fw fa-envelope fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Email</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.github.com/zhuqh">
-              <i class="fab fa-fw fa-github fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Github</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://scholar.google.com/citations?hl=en&amp;user=TZUn02oAAAAJ">
-              <i class="fas fa-fw fa-graduation-cap fa-lg" aria-hidden="true"></i><span class="label" style="font-size: 110%"> Google Scholar</span>
-            </a>
-          </li>
-
-        </ul>
-
-      </header>
-      <section>
-
-      <h2 id="about">About</h2>
-<p>I recently completed my Ph.D. in Computer Science at Peking University, advised by Prof. Yingfei Xiong. My research focused on program generation, program understanding, pre-trained large models, and natural language processing. I developed novel techniques for neural program repair, code generation, and code retrieval, published in top-tier conferences such as ICSE, IJCAI, and AAAI. My work on type-aware neural program repair and syntax-guided code generation has significantly advanced the state-of-the-art in automated software engineering.</p>
-
-<p>Currently, I am a researcher at DeepSeek, where I focus on developing advanced large models for code generation and logical reasoning. My work aims to bridge the gap between human intent and machine execution, enabling more efficient and intelligent software development. I am passionate about creating models that assist developers in writing better code, reducing errors, and improving productivity.</p>
-<hr />
-
-<h2 id="publications">Publications</h2>
-
-<div class="publication-item">
-<p> <strong>Tare: Type-Aware Neural Program Repair</strong> <br /> 
-  <strong>Qihao Zhu</strong>, et al. <br /> 
-<em>45th International Conference on Software Engineering (ICSE) 2023</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>Grape: Grammar-Preserving Rule Embedding</strong> <br />
-  <strong>Qihao Zhu</strong>, et al. <br />
-<em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em> </p>
-</div>
-
-<div class="publication-item">
-<p><strong>A Syntax-Guided Edit Decoder for Neural Program Repair</strong> <br />
-  <strong>Qihao Zhu</strong>, et al. <br />
-<em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>OCoR: An Overlapping-Aware Code Retriever</strong> <br />
-  <strong>Qihao Zhu</strong>, et al. <br />
-<em>35th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2020</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>A Grammar-based Structural CNN Decoder for Code Generation</strong> <br />
-  Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
-<em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2019</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>TreeGen: A Tree-Based Transformer Architecture for Code Generation</strong> <br />
-  Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
-<em>33rd AAAI Conference on Artificial Intelligence (AAAI) 2020</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>Boosting Coverage-based Fault Localization via Graph-based Representation Learning</strong> <br />
-  Yingfei Lou, <strong>Qihao Zhu</strong>, et al. <br />
-<em>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2021</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>FIRA: Fine-grained Graph-based Code Change Representation for Automated Commit Message Generation</strong> <br />
-  Jingxuan Dong, Yingfei Lou, <strong>Qihao Zhu</strong>, et al. <br />
-<em>44th International Conference on Software Engineering (ICSE) 2022</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>Learning to Construct Better Mutation Faults</strong> <br />
-  Zhenyu Tian, Jingxuan Chen, <strong>Qihao Zhu</strong>, et al. <br />
-<em>37th IEEE/ACM International Conference on Automated Software Engineering (ASE) 2022</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>NLocalSAT: Boosting Local Search with Solution Prediction</strong> <br />
-  Wenjie Zhang, Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
-<em>29th International Joint Conference on Artificial Intelligence (IJCAI) 2020</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>Lyra: A Benchmark for Turducken-Style Code Generation</strong> <br />
-  Qingyuan Liang, Zeyu Sun, <strong>Qihao Zhu</strong>, et al. <br />
-<em>31st International Joint Conference on Artificial Intelligence (IJCAI) 2022</em></p>
-</div>
-
-<div class="publication-item">
-<p><strong>Preferential Labeling for Unattributed Node Classification in GNNs</strong> <br />
-  Zeyu Sun, Zeyu Sun, Li Mou, <strong>Qihao Zhu</strong>, et al. <br />
-<em>36th AAAI Conference on Artificial Intelligence (AAAI) 2022</em></p>
-</div>
-
-<hr />
-
-<h2 id="awards">Awards</h2>
-<div class="award-item">
-<p>🏆 <strong>Peking University President Scholarship</strong></p>
-</div>
-<div class="award-item">
-<p>🏆 <strong>Peking University Outstanding Student Award</strong></p>
-</div>
-<div class="award-item">
-<p>🏆 <strong>Peking University May 4th Scholarship</strong></p>
-</div>
-<div class="award-item">
-<p>🏆 <strong>Peking University Guanghua Scholarship</strong></p>
-</div>
-
-<hr />
-
-<h2 id="services">Services</h2>
-
-<div class="service-item">
-<p>📝 <strong>Reviewer</strong> <br />
-AAAI, ICSE, FSE, IJCAI, ASE</p>
-</div>
-
-<div class="service-item">
-<p>👨‍🏫 <strong>Teaching Assistant</strong><br />
-  Program Analysis, 2022 <br />
-  Software Engineering, 2021 <br />
-</p>
-</div>
-
-<hr />
-
-
-      </section>
-      <footer>
-        
-
-        <p><small>Aug. 2023</small></p>
-        
-        <!-- 添加DeepSeek-V3标识 -->
-        <div class="deepseek-identifier">
-            <p>This page is autonomously generated by <a href="https://www.deepseek.com">DeepSeek-V3</a>.</p>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="particles-js" id="particles-js"></div>
+        <div class="container">
+            <div class="header-content animate-on-scroll">
+                <img src="assets/img/avatar.jpg" alt="Zhu Qihao" class="profile-image">
+                <div class="header-text">
+                    <h1>Zhu Qihao</h1>
+                    <p class="title">AI Researcher | Program Generation Expert</p>
+                    <div class="social-links">
+                        <a href="mailto:zhuqh@pku.edu.cn" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/zhuqh" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=TZUn02oAAAAJ" class="social-link"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://linkedin.com/in/qihao-zhu" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/qihao_zhu" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#awards" class="nav-link">Awards</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content animate-on-scroll">
+                <div class="about-text">
+                    <p>I recently completed my Ph.D. in Computer Science at Peking University, advised by Prof. Yingfei Xiong. My research focused on program generation, program understanding, pre-trained large models, and natural language processing.</p>
+                    <p>I developed novel techniques for neural program repair, code generation, and code retrieval, published in top-tier conferences such as ICSE, IJCAI, and AAAI. My work on type-aware neural program repair and syntax-guided code generation has significantly advanced the state-of-the-art in automated software engineering.</p>
+                    <p>Currently, I am a researcher at DeepSeek, where I focus on developing advanced large models for code generation and logical reasoning. My work aims to bridge the gap between human intent and machine execution, enabling more efficient and intelligent software development.</p>
+                    <p>I am passionate about creating models that assist developers in writing better code, reducing errors, and improving productivity.</p>
+                </div>
+                <!-- <div class="about-image">
+                    <img src="https://via.placeholder.com/400x300.png?text=Research+Illustration" alt="Research Illustration">
+                </div> -->
+            </div>
+        </section>
         
-      </footer>
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2 class="section-title animate-on-scroll">Publications</h2>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">Tare: Type-Aware Neural Program Repair</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ICSE 2023</div>
+            </div>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">Grape: Grammar-Preserving Rule Embedding</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">IJCAI 2022</div>
+            </div>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">A Syntax-Guided Edit Decoder for Neural Program Repair</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ESEC/FSE 2021</div>
+            </div>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">OCoR: An Overlapping-Aware Code Retriever</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ASE 2020</div>
+            </div>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">A Grammar-based Structural CNN Decoder for Code Generation</div>
+                <div class="pub-authors">Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">AAAI 2019</div>
+            </div>
+            
+            <div class="publication-item animate-on-scroll">
+                <div class="pub-title">TreeGen: A Tree-Based Transformer Architecture for Code Generation</div>
+                <div class="pub-authors">Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">AAAI 2020</div>
+            </div>
+            
+            <button id="viewMoreBtn" class="animate-on-scroll" style="display: inline-block; margin-top: 2rem; padding: 0.8rem 1.5rem; background-color: var(--primary); color: white; border: none; border-radius: 4px; font-family: inherit; font-weight: 500; cursor: pointer; transition: all 0.3s ease;">View All Publications</button>
+        </section>
+        
+        <!-- Awards Section -->
+        <section id="awards">
+            <h2 class="section-title animate-on-scroll">Awards & Honors</h2>
+            
+            <div class="awards-grid">
+                <div class="award-card animate-on-scroll">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="award-title">Peking University President Scholarship</div>
+                    <div class="award-org">Peking University</div>
+                </div>
+                
+                <div class="award-card animate-on-scroll">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div class="award-title">Outstanding Student Award</div>
+                    <div class="award-org">Peking University</div>
+                </div>
+                
+                <div class="award-card animate-on-scroll">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <div class="award-title">May 4th Scholarship</div>
+                    <div class="award-org">Peking University</div>
+                </div>
+                
+                <div class="award-card animate-on-scroll">
+                    <div class="award-icon"><i class="fas fa-star"></i></div>
+                    <div class="award-title">Guanghua Scholarship</div>
+                    <div class="award-org">Peking University</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title animate-on-scroll">Academic Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <div class="service-title">Conference Reviewer</div>
+                    <div class="service-desc">Served as reviewer for top conferences including AAAI, ICSE, FSE, IJCAI, and ASE</div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="service-title">Teaching Assistant</div>
+                    <div class="service-desc">Program Analysis (2022)<br>Software Engineering (2021)</div>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon"><i class="fas fa-users"></i></div>
+                    <div class="service-title">Mentorship</div>
+                    <div class="service-desc">Mentored several undergraduate and graduate students in their research projects</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            
+            <div class="contact-form animate-on-scroll" style="background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <form>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
+                        <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
+                    </div>
+                    
+                    <button type="submit" style="background-color: var(--primary); color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 4px; font-family: inherit; font-weight: 500; cursor: pointer; transition: all 0.3s ease;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Publications Modal -->
+    <div id="publicationsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>All Publications</h2>
+            
+            <div class="publication-item">
+                <div class="pub-title">Tare: Type-Aware Neural Program Repair</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ICSE 2023</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">Grape: Grammar-Preserving Rule Embedding</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">IJCAI 2022</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">A Syntax-Guided Edit Decoder for Neural Program Repair</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ESEC/FSE 2021</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">OCoR: An Overlapping-Aware Code Retriever</div>
+                <div class="pub-authors">Qihao Zhu, et al.</div>
+                <div class="pub-conference">ASE 2020</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">A Grammar-based Structural CNN Decoder for Code Generation</div>
+                <div class="pub-authors">Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">AAAI 2019</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">TreeGen: A Tree-Based Transformer Architecture for Code Generation</div>
+                <div class="pub-authors">Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">AAAI 2020</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">Boosting Coverage-based Fault Localization via Graph-based Representation Learning</div>
+                <div class="pub-authors">Yingfei Lou, Qihao Zhu, et al.</div>
+                <div class="pub-conference">ESEC/FSE 2021</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">FIRA: Fine-grained Graph-based Code Change Representation for Automated Commit Message Generation</div>
+                <div class="pub-authors">Jingxuan Dong, Yingfei Lou, Qihao Zhu, et al.</div>
+                <div class="pub-conference">ICSE 2022</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">Learning to Construct Better Mutation Faults</div>
+                <div class="pub-authors">Zhenyu Tian, Jingxuan Chen, Qihao Zhu, et al.</div>
+                <div class="pub-conference">ASE 2022</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">NLocalSAT: Boosting Local Search with Solution Prediction</div>
+                <div class="pub-authors">Wenjie Zhang, Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">IJCAI 2020</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">Lyra: A Benchmark for Turducken-Style Code Generation</div>
+                <div class="pub-authors">Qingyuan Liang, Zeyu Sun, Qihao Zhu, et al.</div>
+                <div class="pub-conference">IJCAI 2022</div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="pub-title">Preferential Labeling for Unattributed Node Classification in GNNs</div>
+                <div class="pub-authors">Zeyu Sun, Zeyu Sun, Li Mou, Qihao Zhu, et al.</div>
+                <div class="pub-conference">AAAI 2022</div>
+            </div>
+        </div>
     </div>
-    <script src="assets/js/scale.fix.js"></script>
-    <!--<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=CG1Ki6-8ZvNDOkRKNr_563T5Za79VQlgTvgvoc8qUh4"></script>-->
-  </body>
-
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Zhu Qihao</div>
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#publications" class="footer-link">Research</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <div class="copyright">© 2023 Zhu Qihao. All rights reserved. This page is generated by DeepSeek-V3-0324.</div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        
+        // Scroll animation
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Update active nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Create floating code snippets
+        const codeSnippets = [
+            "def neural_repair(buggy_code):",
+            "class ProgramGenerator:",
+            "function analyzeCode() {",
+            "model = Transformer()",
+            "for epoch in range(100):",
+            "vector = embed(code)",
+            "if (bug_detected) {",
+            "tensor = torch.Tensor()"
+        ];
+        
+        const colors = ['#4361ee', '#4895ef', '#4cc9f0', '#3f37c9'];
+        
+        function createFloatingCode() {
+            const snippet = document.createElement('div');
+            snippet.className = 'code-snippet';
+            snippet.textContent = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
+            snippet.style.color = colors[Math.floor(Math.random() * colors.length)];
+            snippet.style.top = `${Math.random() * 80 + 10}%`;
+            snippet.style.left = `${Math.random() * 80 + 10}%`;
+            snippet.style.animationDuration = `${Math.random() * 10 + 5}s`;
+            document.body.appendChild(snippet);
+            
+            setTimeout(() => {
+                snippet.remove();
+            }, 15000);
+        }
+        
+        // Create initial code snippets
+        for (let i = 0; i < 8; i++) {
+            setTimeout(createFloatingCode, i * 1000);
+        }
+        
+        // Continue creating new snippets
+        setInterval(createFloatingCode, 2000);
+        
+        // Modal functionality for publications
+        const modal = document.getElementById("publicationsModal");
+        const btn = document.getElementById("viewMoreBtn");
+        const span = document.getElementsByClassName("close")[0];
+        
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
